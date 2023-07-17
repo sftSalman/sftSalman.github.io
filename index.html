@@ -17,6 +17,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="about.css">
 </head>
 <body id="page-top">
 
@@ -53,7 +54,7 @@
     </div>
 </header>
 
-<!-- About -->
+<!-- About Me -->
 <section class="page-section bg-primary" id="about">
     <div id="particles-js">
         <section class="home-about-area section-gap">
@@ -76,80 +77,36 @@
     </div>
 </section>
 
-<!-- Portfolio -->
-<div id="portfolio">
-    <div class="container-fluid p-0">
-        <div class="row g-0">
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
-                    <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
-                    <div class="portfolio-box-caption">
-                        <div class="project-category text-white-50">Category</div>
-                        <div class="project-name">Project Name</div>
-                    </div>
-                </a>
+<!-- Include About Me page -->
+<section class="page-section">
+    <div id="particles-js">
+        <div id="textbox" class="box">
+            <h2>ABOUT ME</h2>
+            <div class="btn">
+                <button onclick="goBack()">Home</button>
             </div>
-            <!-- More portfolio items -->
         </div>
     </div>
+</section>
+
+<!-- Portfolio -->
+<div id="portfolio">
+    <!-- Portfolio content -->
 </div>
 
 <!-- Services -->
 <section class="services-area section-gap">
-    <div class="services">
-        <div class="row d-flex justify-content-center">
-            <div class="menu-content col-lg-7">
-                <div class="title text-center">
-                    <h1 class="mb-10">Areas of Interest</h1>
-                    <p>Take a look at some of the things I love working on.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="single-services">
-                    <span class="lnr lnr-cloud-check"></span>
-                    <a><h4>Cloud Compute</h4></a>
-                    <p>I utilize AWS to develop and productionize machine learning systems.</p>
-                </div>
-            </div>
-            <!-- More service items -->
-        </div>
-    </div>
+    <!-- Services content -->
 </section>
 
 <!-- Call to action-->
 <section class="page-section bg-dark text-white">
-    <div class="container px-4 px-lg-5 text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
-    </div>
+    <!-- Call to action content -->
 </section>
 
 <!-- Contact-->
 <section class="page-section" id="contact">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 col-xl-6 text-center">
-                <h2 class="mt-0">Let's Get In Touch!</h2>
-                <hr class="divider" />
-                <p class="text-muted mb-5">Ready to start your next project with us? Send us a message and we will get back to you as soon as possible!</p>
-            </div>
-        </div>
-        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-            <div class="col-lg-6">
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <!-- Form fields -->
-                </form>
-            </div>
-        </div>
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                <div>+1 (555) 123-4567</div>
-            </div>
-        </div>
-    </div>
+    <!-- Contact content -->
 </section>
 
 <!-- Footer-->
@@ -173,6 +130,12 @@
     particlesJS.load('particles-js', 'particles.json', function() {
         console.log('particles.js loaded');
     });
+</script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+    function goBack() {
+        window.history.back();
+    }
 </script>
 </body>
 </html>
